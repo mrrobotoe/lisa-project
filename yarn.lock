@@ -2029,6 +2029,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:^0.8.2":
+  version: 0.8.8
+  resolution: "@emotion/is-prop-valid@npm:0.8.8"
+  dependencies:
+    "@emotion/memoize": 0.7.4
+  checksum: f6be625f067c7fa56a12a4edaf090715616dc4fc7803c87212831f38c969350107b9709b1be54100e53153b18d9fa068eb4bf4f9ac66a37a8edf1bac9b64e279
+  languageName: node
+  linkType: hard
+
+"@emotion/memoize@npm:0.7.4":
+  version: 0.7.4
+  resolution: "@emotion/memoize@npm:0.7.4"
+  checksum: b2376548fc147b43afd1ff005a80a1a025bd7eb4fb759fdb23e96e5ff290ee8ba16628a332848d600fb91c3cdc319eee5395fa33d8875e5d5a8c4ce18cddc18e
+  languageName: node
+  linkType: hard
+
 "@envelop/core@npm:4.0.0, @envelop/core@npm:^4.0.0":
   version: 4.0.0
   resolution: "@envelop/core@npm:4.0.0"
@@ -6020,6 +6036,16 @@ __metadata:
     "@typescript-eslint/types": 5.61.0
     eslint-visitor-keys: ^3.3.0
   checksum: f438b68b67e03fc39e39537a594259f5df64155f775ef7afb915507f7c364ba8a93567302080c3364d270001d5dd67ee0a0632a92d8d6f6fc776f97c082c130a
+  languageName: node
+  linkType: hard
+
+"@uidotdev/usehooks@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@uidotdev/usehooks@npm:2.1.0"
+  peerDependencies:
+    react: ">=18.0.0"
+    react-dom: ">=18.0.0"
+  checksum: 5014b855a7af0b35d13ddfc15fbc882bf31ff2a2f389b447daa78b3382982bdff6f36d19e7cf97b5ade32f27ac1900433f1425380743d3c98b036cfa357ca782
   languageName: node
   linkType: hard
 
@@ -11639,6 +11665,27 @@ __metadata:
   dependencies:
     map-cache: ^0.2.2
   checksum: 5891d1c1d1d5e1a7fb3ccf28515c06731476fa88f7a50f4ede8a0d8d239a338448e7f7cc8b73db48da19c229fa30066104fe6489862065a4f1ed591c42fbeabf
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^10.15.2":
+  version: 10.15.2
+  resolution: "framer-motion@npm:10.15.2"
+  dependencies:
+    "@emotion/is-prop-valid": ^0.8.2
+    tslib: ^2.4.0
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: f1a406a2a06cbea8e9e04c1268090c815d65f3bc337721bfd7f86b0135edf9f308ae49a6f33aaa35e59c5d1a3d06ed6b1c833b0eb85196152e24e71f30d52d78
   languageName: node
   linkType: hard
 
@@ -20696,6 +20743,8 @@ __metadata:
     "@redwoodjs/router": 6.0.6
     "@redwoodjs/vite": 6.0.6
     "@redwoodjs/web": 6.0.6
+    "@uidotdev/usehooks": ^2.1.0
+    framer-motion: ^10.15.2
     prop-types: 15.8.1
     react: 18.2.0
     react-dom: 18.2.0

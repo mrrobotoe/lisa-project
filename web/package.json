@@ -19,6 +19,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@redwoodjs/vite": "6.0.6"
+    "@redwoodjs/vite": "6.0.6",
+    "@uidotdev/usehooks": "^2.1.0",
+    "framer-motion": "^10.15.2"
   }
 }

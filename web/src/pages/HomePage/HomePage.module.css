@@ -1,0 +1,13 @@
+.homePageSections {
+  padding: var(--s-1);
+}
+
+.homePageHeroSection {
+  background-color: var(--color-white-smoke);
+}
+
+.homePageHeaderFont {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
