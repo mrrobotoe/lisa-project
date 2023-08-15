@@ -11,20 +11,20 @@ const Navigation = () => {
   const [expandMenu, setExpand] = useToggle(false)
   const [ref, hovering] = useHover()
   console.log(isPortrait)
-  const controlNavbar = () => {
-    if (window.scrollY > 20) {
-      setExpand(true)
-    } else {
-      setExpand(false)
-    }
-  }
 
   useEffect(() => {
+    const controlNavbar = () => {
+      if (window.scrollY > 20) {
+        setExpand(true)
+      } else {
+        setExpand(false)
+      }
+    }
     window.addEventListener('scroll', controlNavbar)
     return () => {
       window.removeEventListener('scroll', controlNavbar)
     }
-  }, [expandMenu])
+  }, [setExpand])
 
   useLayoutEffect(() => {
     if (menu) {

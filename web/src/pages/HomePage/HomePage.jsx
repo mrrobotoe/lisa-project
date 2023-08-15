@@ -2,17 +2,27 @@ import { MetaTags } from '@redwoodjs/web'
 
 import { Box } from 'src/styles/box'
 import { Frame } from 'src/styles/frame'
+import { Grid } from 'src/styles/grid'
 
 import styles from './HomePage.module.css'
 const HomePage = () => {
   return (
-    <>
+    <Grid min="300px" space="2rem">
       <MetaTags title="Home" description="Home page" />
 
       <Box padding="var(--s1)">
         <h1 className={styles.homePageHeaderFont}>Planning</h1>
+        <p style={{ textAlign: 'center', lineHeight: '2' }}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id et
+          inventore, officia animi ullam rerum esse, eum excepturi laborum a
+          nulla veritatis nostrum incidunt, ea reiciendis voluptates distinctio
+          eos pariatur?
+        </p>
       </Box>
-      <section
+      <Box
+        borderWidth="var(--s1)"
+        padding="0"
+        as="section"
         className={[styles.homePageSections, styles.homePageHeroSection].join(
           ' '
         )}
@@ -23,8 +33,8 @@ const HomePage = () => {
             alt="planner and watch dispalyed on table"
           />
         </Frame>
-      </section>
-    </>
+      </Box>
+    </Grid>
   )
 }
 
